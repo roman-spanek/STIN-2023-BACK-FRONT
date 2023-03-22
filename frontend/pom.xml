@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>roman.spanek.stin-2023</groupId>
+	<artifactId>frontend</artifactId>
+	<version>0.0.1</version>
+	<name>JavaHTTPFrontend</name>
+	<description>Java HTTP frontend</description>
+
+	<properties>
+		<maven.compiler.source.version>11</maven.compiler.source.version>
+		<maven.compiler.target.version>11</maven.compiler.target.version>
+		<jar.name>frontend</jar.name>
+		<eclipse.collections.version>10.0.0</eclipse.collections.version>
+		<shade.plugin.version>3.2.4</shade.plugin.version>
+		<maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${maven.compiler.source.version}</source>
+					<target>${maven.compiler.target.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+					<mainClass>cz.tul.stin2023.frontend.FrontendApplication</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+</project>
